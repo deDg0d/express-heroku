@@ -26,7 +26,7 @@ app.use(express.urlencoded({extended:true}))
 const port = process.env.PORT || 3000;
 
 app.get('/',function(req,res){
-  res.send('server live')
+  res.send('server is live')
   console.log('server is running')
  })
  app.listen(port)
