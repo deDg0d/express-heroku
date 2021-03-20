@@ -23,12 +23,13 @@ app.use(express.urlencoded({extended:true}))
 //   } , {timestamps:true})
 //   const Web = mongoose.model('Web', DataType) 
   
+const port = process.env.PORT || 3000;
 
 app.get('/',function(req,res){
   res.send('server live')
   console.log('server is running')
  })
- app.listen(8080)
+ app.listen(port)
 // // app.get('/add',(req,res)=>{
 // //     const web = new Web({ 
 // //         title : 'new blog',
